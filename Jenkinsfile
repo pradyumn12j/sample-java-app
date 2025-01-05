@@ -13,5 +13,8 @@ pipeline
             sh'mvn validate'
 }}
         }
+        stage("code testing")
+        
+        sh'mvn test'
     }
 }
