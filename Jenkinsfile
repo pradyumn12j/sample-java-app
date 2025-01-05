@@ -5,7 +5,7 @@ pipeline
     {
         stage("Git checkout")
         {
-            steps{git branch: 'master', url: 'https://github.com/pradyumn12j/sample-java-app.git'}
+            steps{git branch: 'main', url: 'https://github.com/pradyumn12j/sample-java-app.git'}
         }
     }
 }
