@@ -44,12 +44,6 @@ stage("deploy to tomcat dev")
   }}
         
         }
-=======
-            sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.21.23:/usr/share/tomcat/webapps'
-  }}
-        
-        }
-        
->>>>>>> 051096d4f2d9bfbd5ad523ce827ed78d00c715f7
+
     }
 }
