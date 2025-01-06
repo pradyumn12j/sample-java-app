@@ -21,8 +21,10 @@ pipeline
         }
         stage("deploy to tomcat dev")
         {
-        steps{sshagent (credentials: ['dev-deployments-v2']) {
-    sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.21.23:8080 /usr/share/tomcat/webapps'
+        steps{sshagent (credentials: ['dev-deployments-v3']) {
+
+
+            sh 'scp -o StrictHostKeyChecking=no webapp/target/webapp.war ec2-user@172.31.21.23:8080 /usr/share/tomcat/webapps'
   }}
         
         }
